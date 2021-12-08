@@ -1,2 +1,3 @@
-# ascii-draw
-Drawing ASCII  on canvas, using Python
+# ASCII Draw
+
+A simple package for drawing ASCII on canvas, using Python.
