@@ -2,6 +2,24 @@
 
 A simple package for drawing ASCII on canvas, using Python.
 
+To use it, 
+
+* Import the package
+* Draw a canvas
+* Draw points inside the canvas
+* Update the screen
+
+
+```python
+from ascii_draw import Canvas
+
+canvas = Canvas(size=(30,100))
+canvas.render_canvas()
+canvas.render_point(y=15,x=50)
+canvas.update_screen() 
+```
+
+Be creative!
 
 ## Examples:
 
@@ -26,3 +44,9 @@ for _ in range(50):
     time.sleep(0.1)
 ```
 ![](img/random_walk.gif)
+
+### BOIDS:
+
+Bird-like movement for each particle by following three rules. Code is in boids_example.py
+
+![](img/boids.gif)
