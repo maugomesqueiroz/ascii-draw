@@ -19,8 +19,8 @@ class Particle:
         self.color = color
         self.char = char
     def update_position(self):
-        self.x += random.randint(-1,1)
-        self.y += random.randint(-1,1)
+        self.x += random.uniform(-1,1)
+        self.y += random.uniform(-1,1)
 
 
 # Creating list of particles
@@ -40,7 +40,7 @@ for _ in range(30):
 # rendering each particle and updating its position
 
 canvas = Canvas(size=(30,100))
-for _ in range(100):
+for _ in range(50):
     canvas.render_canvas()
     for particle in particles:
         canvas.render_point(

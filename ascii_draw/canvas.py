@@ -29,7 +29,7 @@ class Canvas:
     def render_point(self, y, x,char='X',color=None):
         char_str= f'{color}{char}{Colors.reset}' if color else char
         try:
-            self.frame[y][x] = char_str
+            self.frame[round(y)][round(x)] = char_str
         except:
             # Out of bounds
             pass
